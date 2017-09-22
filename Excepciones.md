@@ -42,9 +42,9 @@ try {
 }
 ```
 
-
 ![](https://github.com/javacha/femp-docs/blob/master/excepciones/img/img2.png)
-> Tabla1. Ejemplo de manejo de BussinesExceptiom
+> Tabla 1. Ejemplo de BussinessException
+
 
 
 ### FempGlobalExceptionHandler
@@ -61,6 +61,37 @@ Esta clase es la red que atrapa cualquier excepción no manejada. Da tratamiendo
 ## Manejo front-end
 
 
+### Grillas
+
+- Grilla, sin datos
+-- Dentro de grilla se muestra mensaje generico, o mensaje de BusinessException
+
+
+- Grilla, error al ejecutar
+-- Dentro de grilla en azul se muestra mensaje generico, o mensaje de BusinessException
+-- Stack de errores en rojo se muestra mensaje DataAccessException
+
+- Grilla detalle, sin datos
+-- Dentro de grilla en azul se muestra mensaje generico, o mensaje de BusinessException
+
+- Grilla detalle, error al ejecutar
+-- Dentro de grilla en azul se muestra mensaje generico
+-- Stack de errores en rojo se muestra mensaje DataAccessException
+
+
+### Formulario
+
+- Submit, validaciones
+-- Stack de errores en rojo se muestra lista de mensajes recibidos
+
+- Llamada Ajax, mensaje funcional
+-- Se deberá manejar puntualmente
+
+- Llamada Ajax, error al ejecutar
+-- Stack de errores en rojo se muestra mensaje DataAccessException
+
+
+----
 
 
 # H1 Headers (Underline)
