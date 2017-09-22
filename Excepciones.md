@@ -30,7 +30,7 @@ try {
 	if(ERROR_EMPLEADO_DUPLICADO.equals(e.getExceptionCode())){		
 		throw new BusinessException(messageSource.getMessage(KEY_ERROR_MSJ_EMPLEADO_DUPLICADO,null, LocaleContextHolder.getLocale()));
 	}else{
-		throw new NotOkException(e.getExceptionCode(),e.getExceptionMsg());
+		throw new BusinessException(e.getExceptionMsg());
 	}
 }
 ```
