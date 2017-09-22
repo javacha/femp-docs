@@ -13,7 +13,7 @@ A nivel de DAO retornaremos algunas de la sigs. excepciones:
 
 - NotOkException: en caso que se detecte un error de negocio retornado por el servicio consumido (trx, sp, ws, etc). 
 
-<pre>
+```java
 try {
 	cuentasDao.getSaldoByCuenta(cuenta);
 } catch (NotOKException e) {
@@ -21,7 +21,7 @@ try {
 		sinSaldo=true;
 	}
 }
-</pre>
+```
 
 
 
