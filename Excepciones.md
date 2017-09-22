@@ -17,8 +17,20 @@ A nivel de DAO retornaremos algunas de la sigs. excepciones:
 try {
 	saldo = cuentasDao.getSaldoByCuenta(cuenta);
 } catch (NotOKException e) {
-	if (e.getExceptionCode == "RAH00024") {
+	if (ERROR_SIN_SALDO.equals(e.getExceptionCode())) {
 		saldo = 0.00;
+	}
+}
+```
+
+```java
+try {
+	haberesDao.agregarOperacion(pagoBean);
+} catch (NotOKException e) {
+	if(ERROR_EMPLEADO_DUPLICADO.equals(e.getExceptionCode())){		
+		throw new BusinessException(messageSource.getMessage(KEY_ERROR_MSJ_EMPLEADO_DUPLICADO,null, LocaleContextHolder.getLocale()));
+	}else{
+		throw new NotOkException(e.getExceptionCode(),e.getExceptionMsg());
 	}
 }
 ```
