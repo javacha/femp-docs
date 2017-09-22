@@ -13,6 +13,13 @@ A nivel de DAO retornaremos algunas de la sigs. excepciones:
 
 - NotOkException: en caso que se detecte un error de negocio retornado por el servicio consumido (trx, sp, ws, etc). 
 
+
+
+
+
+### Service
+El service asociado a un circuito funcional deberá realizar el catch de las excepciones NotOkException cuando necesite hacer un manejo específico de las respuestas obtenidas. Ejemplos:
+
 ```java
 try {
 	saldo = cuentasDao.getSaldoByCuenta(cuenta);
@@ -35,12 +42,18 @@ try {
 }
 ```
 
+### FempGlobalExceptionHandler
+
+Esta clase es la red que atrapa cualquier excepción no manejada. Da tratamiendo a las siguientes excepciones, detectando si el request se originó por una llamada AJAX o por un circuito Spring MVC.
+
++ BussinessException
++ DataAccessException
++ Exception
 
 
-### Service
-El service asociado a un circuito funcional deberá realizar el catch de las excepciones NotOkException cuando necesite hacer un manejo específico de las respuestas obtenidas. 
+----
 
-<i class="icon-file"></i>##Manejo front-end
+## Manejo front-end
 
 
 
@@ -176,8 +189,3 @@ Image:
 | ------------- | ------------------------------ |
 | `help()`      | Display the help window.       |
 | `destroy()`   | **Destroy your computer!**     |
-
-
-
-
-            
