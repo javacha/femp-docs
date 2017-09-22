@@ -2,9 +2,9 @@
 # Excepciones
 
 
-##Manejo server
+## Manejo server
 
-###DAO
+### DAO
 
 La clase de acceso a datos deberá consumir algún backend SAM a través de una clase SamXXXXService determinada, por ejemplo SamHostService, SamSPService, etc.
 A nivel de DAO retornaremos algunas de la sigs. excepciones:
@@ -25,7 +25,7 @@ try {
 
 
 
-###Service
+### Service
 El service asociado a un circuito funcional deberá realizar el catch de las excepciones NotOkException cuando necesite hacer un manejo específico de las respuestas obtenidas. 
 
 <i class="icon-file"></i>##Manejo front-end
@@ -44,7 +44,7 @@ El service asociado a un circuito funcional deberá realizar el catch de las exc
 
 ----
 
-##Headers (Underline)
+# Headers (Underline)
 
 H1 Header (Underline)
 =============
@@ -55,14 +55,13 @@ H2 Header (Underline)
 
 ----
 
-###Blockquotes
+# Blockquotes
 
 > Blockquotes
 
 
-----
 
-###Links
+# Links
 
 [Links](http://localhost/)
 
@@ -76,15 +75,14 @@ H2 Header (Underline)
 
 
 
-----
 
-###Code Blocks (multi-language) & highlighting
+# Code Blocks (multi-language) & highlighting
 
-####Inline code
+#### Inline code
 
 `$ npm install marked`
 
-####Code Blocks (Indented style)
+#### Code Blocks (Indented style)
 
 Indented 4 spaces, like `<pre>` (Preformatted Text).
 
@@ -99,7 +97,7 @@ Code Blocks (Preformatted text):
     | Content Cell  | Content Cell  |
     | Content Cell  | Content Cell  |
 
-####Javascript　
+#### Javascript　
 
 ```javascript
 function test(){
@@ -110,7 +108,7 @@ var testBox = box();
 testBox.add("jQuery").remove("jQuery");
 ```
 
-####HTML code
+#### TML code
 
 ```html
 <!DOCTYPE html>
@@ -126,7 +124,6 @@ testBox.add("jQuery").remove("jQuery");
 ```
 
 
-----
 
 # Images
 
@@ -137,7 +134,6 @@ Image:
 > Follow your heart.
   
 
-----
 
 # Listas 
 
@@ -167,7 +163,6 @@ Image:
 	     
 	     
 
-----
 
 # Tablas
 
@@ -229,36 +224,3 @@ X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;
     - [ ] :smiley: this is an incomplete item [test link](#) :fa-star: :fa-gear:;
     - [ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item [test link](#);
             
-###TeX(LaTeX)
-   
-$$E=mc^2$$
-
-Inline $$E=mc^2$$ Inline，Inline $$E=mc^2$$ Inline。
-
-$$\(\sqrt{3x-1}+(1+x)^2\)$$
-                    
-$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$
-                
-###FlowChart
-
-```flow
-st=>start: Login
-op=>operation: Login operation
-cond=>condition: Successful Yes or No?
-e=>end: To admin
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
-```
-
-###Sequence Diagram
-                    
-```seq
-Andrew->China: Says Hello 
-Note right of China: China thinks\nabout it 
-China-->Andrew: How are you? 
-Andrew->>China: I am good thanks!
-```
-
-###End
