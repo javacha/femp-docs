@@ -44,7 +44,7 @@ try {
 
 
 ![](https://github.com/javacha/femp-docs/blob/master/excepciones/img/img2.png)
-> Ejemplo de manejo de BussinesExceptiom
+> Tabla1. Ejemplo de manejo de BussinesExceptiom
 
 
 ### FempGlobalExceptionHandler
