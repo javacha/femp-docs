@@ -15,10 +15,10 @@ A nivel de DAO retornaremos algunas de la sigs. excepciones:
 
 ```java
 try {
-	cuentasDao.getSaldoByCuenta(cuenta);
+	saldo = cuentasDao.getSaldoByCuenta(cuenta);
 } catch (NotOKException e) {
 	if (e.getExceptionCode == "RAH00024") {
-		saldo=0.00;
+		saldo = 0.00;
 	}
 }
 ```
