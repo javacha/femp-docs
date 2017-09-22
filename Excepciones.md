@@ -17,8 +17,8 @@ A nivel de DAO retornaremos algunas de la sigs. excepciones:
 try {
 	cuentasDao.getSaldoByCuenta(cuenta);
 } catch (NotOKException e) {
-	if (e.getExceptionCode == 454) {
-		sinSaldo=true;
+	if (e.getExceptionCode == "RAH00024") {
+		saldo=0.00;
 	}
 }
 ```
