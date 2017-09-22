@@ -42,6 +42,11 @@ try {
 }
 ```
 
+
+![](https://github.com/javacha/femp-docs/blob/master/excepciones/img/img2.png)
+> Ejemplo de manejo de BussinesExceptiom
+
+
 ### FempGlobalExceptionHandler
 
 Esta clase es la red que atrapa cualquier excepción no manejada. Da tratamiendo a las siguientes excepciones, detectando si el request se originó por una llamada AJAX o por un circuito Spring MVC.
