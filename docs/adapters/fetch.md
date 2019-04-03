@@ -13,7 +13,7 @@ npm install @pollyjs/adapter-fetch -D
 
 If you want to install it with [yarn](https://yarnpkg.com):
 
-```js
+```javascript
 
 function recuperarDatosCBU(cbu, cuil){
 	
