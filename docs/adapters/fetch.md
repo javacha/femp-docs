@@ -13,8 +13,29 @@ npm install @pollyjs/adapter-fetch -D
 
 If you want to install it with [yarn](https://yarnpkg.com):
 
-```bash
-yarn add @pollyjs/adapter-fetch -D
+```js
+
+function recuperarDatosCBU(cbu, cuil){
+	
+	activarProcesando();
+	var params = { cbu, cuil };
+    
+    $.ajax({
+        url: junctionGlobal.concat(URL).concat('/empleados/alta/recuperar/externo?').concat($.param(params)),
+        type: 'GET',
+        success: function(data, jqXHR, ajaxSettings){
+        	
+        	if(data.titular != null) {
+        		$("#nombreExterno").val(data.titular);
+            }
+        	
+        },
+        complete: function(response, ioArgs) {
+			consoleSafe('recuperarDatosCBU END');       
+		}
+    });		
+	
+}
 ```
 
 ## Usage
