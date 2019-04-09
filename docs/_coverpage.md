@@ -2,7 +2,7 @@
   <div class="logo"></div>
 </div>
 
-![logo](assets/images/wordmark-logo-alt.png)
+![logo](assets/images/logo.png)
 
 > Record, replay, and stub HTTP interactions.
 
