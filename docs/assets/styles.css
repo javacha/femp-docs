@@ -274,6 +274,7 @@ body .sidebar-toggle span:nth-child(3) {
 /****** Markdown General ******/
 .markdown-section {
   padding: 30px 30px 40px;
+  max-width: 100%;
 }
 
 .markdown-section a {
